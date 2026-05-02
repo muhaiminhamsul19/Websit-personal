@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #fff5f5;
+  color: #2b1717;
+}
+
+.navbar {
+  width: 100%;
+  padding: 18px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.06);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.logo {
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+  border-radius: 14px;
+}
+
+.nav-btn,
+.primary-btn,
+.mini-download {
+  background: #e53935;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  padding: 13px 24px;
+  border-radius: 999px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.25s;
+  display: inline-block;
+}
+
+.nav-btn:hover,
+.primary-btn:hover,
+.mini-download:hover {
+  background: #b71c1c;
+  transform: translateY(-2px);
+}
+
+.hero {
+  min-height: 78vh;
+  padding: 70px 8%;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 50px;
+}
+
+.badge {
+  background: #ffe1e1;
+  color: #b71c1c;
+  width: fit-content;
+  padding: 9px 16px;
+  border-radius: 999px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 54px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #6b5353;
+  max-width: 620px;
+  margin-bottom: 28px;
+}
+
+.actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+.secondary-btn {
+  border: 2px solid #e53935;
+  color: #e53935;
+  background: transparent;
+  padding: 12px 24px;
+  border-radius: 999px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.file-info {
+  color: #7a6666;
+  font-size: 14px;
+}
+
+.phone-card {
+  display: flex;
+  justify-content: center;
+}
+
+.phone {
+  width: 290px;
+  height: 560px;
+  background: #2b1717;
+  border-radius: 40px;
+  padding: 18px;
+  box-shadow: 0 30px 80px rgba(229, 57, 53, 0.25);
+}
+
+.speaker {
+  width: 90px;
+  height: 8px;
+  background: #4c3b3b;
+  border-radius: 20px;
+  margin: 0 auto 18px;
+}
+
+.screen {
+  height: 488px;
+  border-radius: 28px;
+  background: linear-gradient(160deg, #ffffff, #ffe6e6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 25px;
+}
+
+.app-icon {
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+  border-radius: 28px;
+  margin-bottom: 20px;
+  background: #ffffff;
+}
+
+.screen h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.screen p {
+  color: #6b5858;
+  margin-bottom: 24px;
+}
+
+.steps {
+  padding: 60px 8%;
+  background: #ffffff;
+}
+
+.steps h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 34px;
+}
+
+.step-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.step-card {
+  background: #fff5f5;
+  padding: 26px;
+  border-radius: 24px;
+  border: 1px solid #f2dada;
+}
+
+.step-card span {
+  width: 42px;
+  height: 42px;
+  background: #e53935;
+  color: #fff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.step-card h3 {
+  margin-bottom: 10px;
+}
+
+.step-card p {
+  color: #6d5b5b;
+  line-height: 1.6;
+}
+
+footer {
+  text-align: center;
+  padding: 22px;
+  color: #735f5f;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .badge,
+  .actions {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .step-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .navbar {
+    padding: 14px 5%;
+  }
+
+  .brand span {
+    font-size: 16px;
+  }
+
+  .nav-btn {
+    padding: 10px 16px;
+  }
+
+  .hero {
+    padding: 45px 5%;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .step-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .phone {
+    width: 255px;
+    height: 505px;
+  }
+
+  .screen {
+    height: 435px;
+  }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Download Aplikasi MyFlower</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="brand">
+      <img class="logo" src="assets/myflower-logo.png" alt="Logo MyFlower" />
+      <span>MyFlower</span>
+    </div>
+    <a class="nav-btn" href="downloads/aplikasi.apk" download>Download</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <p class="badge">Aplikasi Android</p>
+        <h1>Download aplikasi MyFlower dengan mudah</h1>
+        <p class="description">
+          Klik tombol download di bawah untuk mengunduh file APK, lalu instal aplikasi di perangkat Android Anda.
+        </p>
+        <div class="actions">
+          <a id="downloadBtn" class="primary-btn" href="downloads/aplikasi.apk" download>
+            Download APK
+          </a>
+          <button class="secondary-btn" onclick="showGuide()">Cara Instal</button>
+        </div>
+        <p class="file-info">File: aplikasi.apk • Ukuran: <span id="apkSize">menghitung...</span></p>
+      </div>
+
+      <div class="phone-card">
+        <div class="phone">
+          <div class="speaker"></div>
+          <div class="screen">
+            <img class="app-icon" src="assets/myflower-logo.png" alt="Logo MyFlower" />
+            <h3>MyFlower</h3>
+            <p>Siap digunakan setelah diinstal</p>
+            <a class="mini-download" href="downloads/aplikasi.apk" download>Unduh Sekarang</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="steps" id="guide">
+      <h2>Cara Instal APK</h2>
+      <div class="step-grid">
+        <div class="step-card">
+          <span>1</span>
+          <h3>Download APK</h3>
+          <p>Tekan tombol Download APK pada website ini.</p>
+        </div>
+        <div class="step-card">
+          <span>2</span>
+          <h3>Buka File</h3>
+          <p>Setelah selesai, buka file aplikasi.apk di HP Android.</p>
+        </div>
+        <div class="step-card">
+          <span>3</span>
+          <h3>Izinkan Instalasi</h3>
+          <p>Jika muncul peringatan, aktifkan izin instal dari sumber tidak dikenal.</p>
+        </div>
+        <div class="step-card">
+          <span>4</span>
+          <h3>Gunakan Aplikasi</h3>
+          <p>Setelah terpasang, buka aplikasi dan mulai gunakan.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 MyFlower. Semua hak cipta dilindungi.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
